@@ -1,3 +1,35 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$font:Helvetica, sans-serif ;
+$primary-color:#3589FF;
+.form_head_div{
+  margin-top: -7px;
+  margin-left: -7px;
+  font-family: initial;
+  background-color: #81CD5C;
+  width: 100%;
+  height: 70px;
+}
+.form_head{
+  font: 100% $font $primary-color;
+  color: $primary-color;
+}
+.login_container {
+  border: .3px solid;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  background-color: #8E9C1F;
+}
+.element_holder{
+  margin: 0 auto;
+  width: 50%;
+  //align-content: center;
+}
+@media only screen and (max-width: 400px){
+  .login_container{
+    width: 135px;
+  }
+}

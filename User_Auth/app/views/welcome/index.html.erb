@@ -1,3 +1,13 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
-<%= link_to 'sign_up', controller: 'user'%>
+<h1 class="form_head_div">ChatRoom</h1>
+<div class = "login_container">
+  <div class="element_holder">
+    <%=form_for(:user,:url =>{:controller => 'user', :action_name=> 'login'}) do |f|%>
+        <h2 class="login_head">login</h2>
+        <p><%=f.text_field :user_name%></p>
+        <p><%=f.password_field :encrypted_password%></p>
+        <p><%=f.submit :login%></p>
+        don't have acount. <%= link_to 'sign_up', controller: 'user'%>
+    <% end %>
+  </div>
+</div>
+
