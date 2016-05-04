@@ -20,7 +20,12 @@ class UserController < ApplicationController
     render "new"
   end
   def user_params
-    params.require(:user).permit(:username, :encrypted_password)
+    params.require(:user).permit(:username,:email, :encrypted_password)
+  end
+  def login
+    @user = User.new(user_params)
+    logger.info"vlaue form login:#{user_params}"
+
   end
 
 end
