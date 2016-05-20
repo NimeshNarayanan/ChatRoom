@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails User_Auth: test" uuid="b684cfd1-dcf7-4af3-a836-73513172d8ce">
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails User_Auth: development" uuid="79a0a82b-76c5-40d4-af14-71b9b00f38e0">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails User_Auth: production" uuid="69350760-65c2-463b-a74c-e50df3cf6303">
+      <user-name>User_Auth</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfffdff9dfefdff8dff5dfebdfffdffedfe2dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>

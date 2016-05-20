@@ -1,14 +1,21 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  post 'user/login'
+  get 'stickies/index'
+  get 'stickies/rout'
+  get 'stickies/form'
+  post 'stickies/form'
 
-  # get 'user/new'
-  # post 'user/create'
+  get 'user/new'
+  post 'user/form'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  resources :stickiexs
   resources :user
   root 'welcome#index'
+  # root 'stickies#index'
   # root 'welcome#application'
 
   # Example of regular route:

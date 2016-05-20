@@ -1,0 +1,10 @@
+class Stickies < ActiveRecord::Migration
+  def change
+    create_table :stickies do |t|
+      t.string :title
+      t.text :content
+      t.references :users, index: true, foreign_key: true
+      t.timestamps null: false
+    end
+  end
+end

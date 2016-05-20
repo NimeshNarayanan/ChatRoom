@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ced200c7-5b4e-4475-9ccd-8684a36cf5a2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../chatRoom/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../chatRoom/hola.gemspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../chatRoom/sample.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../chatRoom/views/index.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../chatRoom/views/layout.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../chatRoom/views/task.slim" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../User_Auth/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../User_Auth/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ruby-getting-started" afterPath="$PROJECT_DIR$/../ruby-getting-started" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../User_Auth/app/controllers/user_controller.rb" afterPath="$PROJECT_DIR$/../User_Auth/app/controllers/user_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../User_Auth/app/models/user.rb" afterPath="$PROJECT_DIR$/../User_Auth/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../User_Auth/app/views/user/new.html.erb" afterPath="$PROJECT_DIR$/../User_Auth/app/views/user/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../User_Auth/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/../User_Auth/app/views/welcome/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../User_Auth/db/migrate/20160428105910_create_users.rb" afterPath="$PROJECT_DIR$/../User_Auth/db/migrate/20160428105910_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../User_Auth/db/schema.rb" afterPath="$PROJECT_DIR$/../User_Auth/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
     </list>
     <ignored path="sinatra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -462,7 +451,7 @@
     <option name="totallyTimeSpent" value="11815000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25751072" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />

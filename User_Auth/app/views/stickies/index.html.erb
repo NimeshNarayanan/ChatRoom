@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'New sticky', controller: 'stickies', action: 'rout' %>
+<h1>Listing Stickies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stickies.each do |sticky| %>
+      <tr>
+        <td><%= sticky.title %></td>
+        <td><%= sticky.content %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<%= link_to 'New Sticky',controller: 'stickies'%>-->

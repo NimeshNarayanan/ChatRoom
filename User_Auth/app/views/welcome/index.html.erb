@@ -1,13 +1,6 @@
-<h1 class="form_head_div">ChatRoom</h1>
+<!--<h1 class="form_head_div">ChatRoom</h1>-->
 <div class = "login_container">
-  <div class="element_holder">
-    <%=form_for(:user,:url =>{:controller => 'user', :action_name=> 'login'}) do |f|%>
-        <h2 class="login_head">login</h2>
-        <p><%=f.text_field :user_name%></p>
-        <p><%=f.password_field :encrypted_password%></p>
-        <p><%=f.submit :login%></p>
-    <% end %>
-    don't have acount. <%= link_to 'sign_up', controller: 'user'%>
-  </div>
+  <%= link_to 'login', controller: 'user', action: 'login'%>OR
+  <%= link_to 'sign_up', controller: 'user', action: 'form'%>
 </div>
 

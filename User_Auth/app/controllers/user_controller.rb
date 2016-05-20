@@ -2,8 +2,13 @@ class UserController < ApplicationController
   def index
     render 'user/new'
   end
+
   def new
     @user = User.new(user_params)
+  end
+
+  def show
+    render 'login'
   end
 
   def create
@@ -17,15 +22,33 @@ class UserController < ApplicationController
       flash[:notice] = "Form is invalid"
       flash[:color]= "invalid"
     end
-    render "new"
+    render 'user/home'
   end
+
   def user_params
-    params.require(:user).permit(:username,:email, :encrypted_password)
+    params.require(:user).permit(:username, :email, :encrypted_password)
+  end
+  def alert_login_error
+    flash[:notice] = "username/password incorect"
+    flash[:color]= "invalid"
   end
   def login
-    @user = User.new(user_params)
-    logger.info"vlaue form login:#{user_params}"
-
+    @user = user_params
+    @resulted_user = User.find_by_email @user[:email]
+    # unless @resulted_user.nil?
+    if @resulted_user.nil?
+      alert_login_error
+      puts '=============================='
+      render 'login'
+    else
+      if (@resulted_user.email.eql? @user[:email]) && (@resulted_user.encrypted_password.eql? @user[:encrypted_password])
+        puts @resulted_user.to_s+'------------------'
+        session[:user_id] = @resulted_user.id
+        render 'home'
+      else
+        alert_login_error
+        render 'login'
+      end
+    end
   end
-
 end

@@ -1,0 +1,7 @@
+<h2>welcome<%=@resulted_user.username%></h2>
+<%= link_to 'form', controller: 'stickies', action_name: 'form', render: stickies_form_path%>
+<%if @stickies%>
+  <div><%@stickies .each do |sticky|%>
+  <p><%=sticky.title%></p>
+  <% end %></div>
+<%end%>

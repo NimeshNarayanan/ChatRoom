@@ -1,0 +1,11 @@
+<div class = "login_container">
+  <div class="element_holder">
+    <%=form_for(:user,:url =>{:controller => 'user', :action => 'login', :method => 'post'}) do |f|%>
+        <h2 class="login_head">login</h2>
+        <p><%=f.email_field :email%></p>
+        <p><%=f.password_field :encrypted_password%></p>
+        <p><%=f.submit :login%></p>
+    <% end %>
+    don't have acount. <%= link_to 'sign_up', controller: 'user', action: 'create'%>
+  </div>
+</div>
